@@ -1,12 +1,6 @@
-# Wall Of Fame - React Client
+# React sample app
 
 [![Build Status](https://travis-ci.org/DerrickJames/wall-of-fame-react.svg)](https://travis-ci.org/DerrickJames/wall-of-fame-react)
-
-This is the client-side implementation of the Wall Of Fame project using React. It is meant to be a playground to test out different ideas and approaches
-gathered over time as a software developer from various books, articles,
-tutorials and experiences on large scale system architectures,
-design patterns, best practices and generally the way I think about elegant
-code.
 
 ## Requirements
 

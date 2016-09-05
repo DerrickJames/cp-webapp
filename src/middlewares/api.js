@@ -24,9 +24,12 @@ function callApi(data, method, endpoint, authenticated) {
     config.data = data;
   }
 
+  console.log('Config: ', config);
+
   return axios(config)
     .then(response => {
-      let newToken = response.data.token;
+      console.log('APIResponseSuccess: ', response);
+      let newToken = response.data.access_token;
 
       if (newToken) {
         localStorage.setItem('fame.auth.token', newToken);
@@ -36,6 +39,7 @@ function callApi(data, method, endpoint, authenticated) {
       return response;
     })
     .catch(error => {
+      console.log('APIResponseError: ', error);
       let payload = {};
       if (error.hasOwnProperty('status')) {
         let { status, data } = error;
@@ -92,5 +96,5 @@ export default store => next => action => {
     error => {
       next({ error, type: errorType });
     }
-  ).catch(errorResponse => {});
+  ).catch(errorResponse => {console.log('ErrorApi: ', errorResponse);});
 };

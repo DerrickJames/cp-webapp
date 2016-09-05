@@ -10,7 +10,7 @@ export default function authReducer(state = initialState.auth, action) {
     case LOGIN_SUCCESS:
       return Object.assign({}, state, {
         token: action.data.token,
-        currentUser: action.data.currentUser,
+        //        currentUser: action.data.currentUser,
         isRequesting: false,
         isAuthenticated: true
       });

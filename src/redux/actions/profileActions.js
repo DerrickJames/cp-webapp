@@ -23,7 +23,7 @@ export function loadProfiles() {
     [CALL_API]: {
       method: 'get',
       authenticated: true,
-      endpoint: 'profiles',
+      endpoint: 'oauth/resource',
       types: [PROFILES_REQUEST, PROFILES_SUCCESS, PROFILES_FAILURE]
     }
   };

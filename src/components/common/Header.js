@@ -3,7 +3,7 @@ import { Link, IndexLink } from 'react-router';
 import LoadingDots from './LoadingDots';
 import SearchForm from './SearchForm';
 
-const Header = ({loading, currentUser, isAuthenticated, searchForm}) => {
+const Header = ({loading, isAuthenticated, searchForm}) => {
   return (
     <nav id="main-nav"
         className="navbar navbar-default navbar-fixed-top main-nav">
@@ -49,7 +49,7 @@ const Header = ({loading, currentUser, isAuthenticated, searchForm}) => {
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false">
-                  {currentUser.username} <span className="caret"></span>
+                  Username<span className="caret"></span>
                 </a>
                 <ul className="dropdown-menu">
                   <li><a href="#">Action</a></li>
@@ -70,7 +70,7 @@ const Header = ({loading, currentUser, isAuthenticated, searchForm}) => {
 
 Header.propTypes = {
   loading: PropTypes.bool.isRequired,
-  currentUser: PropTypes.object.isRequired,
+  //currentUser: PropTypes.object.isRequired,
   isAuthenticated: PropTypes.bool.isRequired,
   searchForm: PropTypes.bool.isRequired
 };

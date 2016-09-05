@@ -1,7 +1,5 @@
 # React sample app
 
-[![Build Status](https://travis-ci.org/DerrickJames/wall-of-fame-react.svg)](https://travis-ci.org/DerrickJames/wall-of-fame-react)
-
 ## Requirements
 
   * Node Version > 6
